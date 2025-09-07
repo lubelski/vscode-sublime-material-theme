@@ -1,8 +1,8 @@
 {
-  "name": "interstellar-sublime-material-theme",
-  "displayName": "Material Theme (based on Sublime and Atom Material themes)",
-  "description": "Sublime Material Theme - based on Atom Material Theme, Atom-Material-Ui and Atom-Material-Syntax",
-  "version": "0.0.1",
+  "name": "interstellar-cafe-theme",
+  "displayName": "Interstellar Cafe Theme",
+  "description": "Dark theme based on Sublime Material Themes, Atom Material Theme, Atom-Material-Ui and Atom-Material-Syntax",
+  "version": "0.0.2",
   "publisher": "interstellar",
   "author": {
     "name": "lubelski"
@@ -26,7 +26,7 @@
     "Themes"
   ],
   "files": [
-    "themes/Sublime Material Theme-color-theme.json",
+    "themes/Interstellar Cafe Theme-color-theme.json",
     "LICENSE.md"
   ],
   "contributes": {
@@ -34,7 +34,7 @@
       {
         "label": "Sublime Material Theme",
         "uiTheme": "vs-dark",
-        "path": "./themes/Sublime Material Theme-color-theme.json"
+        "path": "./themes/Interstellar Cafe Theme-color-theme.json"
       }
     ]
   }
