@@ -2,7 +2,7 @@
   "name": "interstellar-cafe-theme",
   "displayName": "Interstellar Cafe Theme",
   "description": "Dark theme based on Sublime Material Themes, Atom Material Theme, Atom-Material-Ui and Atom-Material-Syntax",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "interstellar",
   "author": {
     "name": "lubelski"
@@ -13,11 +13,11 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lubelski/vscode-sublime-material-theme/issues"
+    "url": "https://github.com/lubelski/vscode-interstellar-cafe-theme/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lubelski/vscode-sublime-material-theme"
+    "url": "https://github.com/lubelski/vscode-interstellar-cafe-theme"
   },
   "engines": {
     "vscode": "^1.16.0"

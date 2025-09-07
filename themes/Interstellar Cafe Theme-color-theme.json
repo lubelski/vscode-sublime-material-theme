@@ -19,7 +19,7 @@
     "editorBracketMatch.background": "#354044",
     "editorBracketMatch.border": "#FF000000",
     "editorCursor.foreground": "#009688",
-    "editorGroup.dropBackground": "#009688",
+    "editorGroup.dropBackground": "#3d586244",
     "editorGroupHeader.tabsBackground": "#2d4048",
     "editorLineNumber.foreground": "#3e4b50",
     "editorOverviewRuler.findMatchForeground": "#0000ffcc",
@@ -41,7 +41,7 @@
     "input.placeholderForeground": "#717e82",
     "list.activeSelectionBackground": "#717e8222",
     "list.activeSelectionForeground": "#00ffd8",
-    "list.dropBackground": "#009688",
+    "list.dropBackground": "#2d4048",
     "list.focusBackground": "#076b61", 
     "list.highlightForeground": "#eeffff",
     "list.hoverBackground": "#2c383d00",
@@ -134,12 +134,13 @@
         "meta.parameters.js",
         "punctuation.separator.comma.js",
         "meta.function-call variable.other.object.property",
-        "meta.definition.property entity.name.function"
+        "meta.definition.property entity.name.function",
+        "meta.definition.variable variable.other.constant entity.name.function"
         
 
       ],
       "settings": {
-        "foreground": "#6cadbdDD" // prev: "#EEFFFF"
+        "foreground": "#EEFFFF" // prev: "#EEFFFF"
       }
     },
     {
