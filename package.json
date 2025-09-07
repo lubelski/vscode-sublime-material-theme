@@ -1,25 +1,23 @@
 {
-  "name": "atom-material-theme",
-  "displayName": "Atom Material Theme",
-  "description": "Atom Material Theme - based on Atom-Material-Ui and Atom-Material-Syntax",
-  "version": "1.10.9",
-  "publisher": "tobiasalthoff",
+  "name": "sublime-material-theme",
+  "displayName": "Sublime Material Theme",
+  "description": "Sublime Material Theme - based on Atom Material Theme, Atom-Material-Ui and Atom-Material-Syntax",
+  "version": "0.0.1",
+  "publisher": "lubelski",
   "author": {
-    "name": "tobiasalthoff"
+    "name": "lubelski"
   },
-  "icon": "images/icon.png",
   "galleryBanner": {
     "color": "#232e33",
     "theme": "dark"
   },
-  "license": "SEE LICENSE IN LICENSE.md",
-  "homepage": "https://github.com/tobiasalthoff/vscode-atom-material-theme/blob/master/README.md",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tobiasalthoff/vscode-atom-material-theme/issues"
+    "url": "https://github.com/lubelski/vscode-sublime-material-theme/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tobiasalthoff/vscode-atom-material-theme"
+    "url": "https://github.com/lubelski/vscode-sublime-material-theme"
   },
   "engines": {
     "vscode": "^1.16.0"
@@ -30,9 +28,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Atom Material Theme",
+        "label": "Sublime Material Theme",
         "uiTheme": "vs-dark",
-        "path": "./themes/Atom Material Theme-color-theme.json"
+        "path": "./themes/Sublime Material Theme-color-theme.json"
       }
     ]
   }
