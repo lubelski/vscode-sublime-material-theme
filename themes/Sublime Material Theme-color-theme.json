@@ -22,7 +22,7 @@
     "editorGroup.dropBackground": "#009688",
     "editorGroupHeader.tabsBackground": "#2d4048",
     "editorLineNumber.foreground": "#3e4b50",
-    "editorOverviewRuler.findMatchForeground": "#0000ff",
+    "editorOverviewRuler.findMatchForeground": "#0000ffcc",
     "editorWidget.background": "#232e33",
     "editorWidget.border": "#29363d",
     "editorSuggestWidget.background": "#29363d",
@@ -139,7 +139,7 @@
 
       ],
       "settings": {
-        "foreground": "#EEFFFF"
+        "foreground": "#6cadbdDD" // prev: "#EEFFFF"
       }
     },
     {
@@ -154,7 +154,7 @@
         "source.js-ignored-vscode"
       ],
       "settings": {
-        "foreground": "#6cadbdAA" // prev: "#89DDF3"
+        "foreground": "#6cadbdDD" // prev: "#89DDF3"
       }
     },
     {
@@ -400,6 +400,32 @@
     },
     {
       "scope": [
+        "entity.other.attribute-name.pseudo-class.css"
+      ],
+      "settings": {
+        "foreground": "#FFFFFF" 
+      }
+    },
+    {
+      "scope": [
+        "entity.other.attribute-name.class.css",
+        "support.constant.parity.css"
+      ],
+      "settings": {
+        "foreground": "#ffc857" 
+      }
+    },
+        {
+      "scope": [
+        "entity.name.tag.css",
+        "meta.property-value.css",
+      ],
+      "settings": {
+        "foreground": "#ff8563" 
+      }
+    },
+    {
+      "scope": [
         "support.type.property-name.css",
         "support.type.property-name.media.css",
         "support.constant.parity.css",
@@ -407,7 +433,7 @@
         // "meta.object-literal.key.ts"
       ],
       "settings": {
-        "foreground": "#73d1c8"
+        "foreground": "#abcdd7" // prev: "#73d1c8"
       }
     },
     {
