@@ -3,7 +3,7 @@
   "displayName": "Sublime Material Theme",
   "description": "Sublime Material Theme - based on Atom Material Theme, Atom-Material-Ui and Atom-Material-Syntax",
   "version": "0.0.1",
-  "publisher": "lubelski",
+  "publisher": "interstellar",
   "author": {
     "name": "lubelski"
   },
@@ -24,6 +24,10 @@
   },
   "categories": [
     "Themes"
+  ],
+  "files": [
+    "themes/Sublime Material Theme-color-theme.json",
+    "LICENSE.md"
   ],
   "contributes": {
     "themes": [
