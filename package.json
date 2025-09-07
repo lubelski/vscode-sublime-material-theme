@@ -1,6 +1,6 @@
 {
-  "name": "sublime-material-theme",
-  "displayName": "Sublime Material Theme",
+  "name": "interstellar-sublime-material-theme",
+  "displayName": "Material Theme (based on Sublime and Atom Material themes)",
   "description": "Sublime Material Theme - based on Atom Material Theme, Atom-Material-Ui and Atom-Material-Syntax",
   "version": "0.0.1",
   "publisher": "interstellar",
