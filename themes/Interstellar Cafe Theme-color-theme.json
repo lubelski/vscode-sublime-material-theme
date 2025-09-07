@@ -50,8 +50,7 @@
     "gitDecoration.stageDeletedResourceForeground": "#ffcbc2",  // Staged deletions
     
     // Renamed files
-    "gitDecoration.renamedResourceForeground": "#b5ffcf"
-
+    "gitDecoration.renamedResourceForeground": "#b5ffcf",
 
     "input.background": "#20292e",
     "input.foreground": "#ffffff", 
