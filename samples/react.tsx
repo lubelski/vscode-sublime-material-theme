@@ -35,6 +35,13 @@ const UserDashboard: React.FC = () => {
     }, 1000);
   }, []);
 
+  const [aVeryVeryVeryLongVariableName, setAVeryVeryVeryLongVariableName] = useState<string | null>(null)
+
+
+  const [aVeryVeryVeryLongVariableName2, setAVeryVeryVeryLongVariableName2] = useState<
+    string | null
+  >(null)
+
   const addTodo = useCallback(() => {
     if (inputValue.trim()) {
       setTodos(prev => [...prev, inputValue.trim()]);

@@ -35,24 +35,37 @@
     "editorSuggestWidget.highlightForeground": "#e6f5f3",
     "editorSuggestWidget.selectedBackground": "#009688",
     "focusBorder": "#2c383d",
-    "gitDecoration.conflictingResourceForeground": "#ff6b01",
-    "gitDecoration.deletedResourceForeground": "#ffb6b4",
-    "gitDecoration.ignoredResourceForeground": "#6a777a",
-    "gitDecoration.modifiedResourceForeground": "#FFCA28",
-    "gitDecoration.untrackedResourceForeground": "#8BC34A",
+      
+    // File status colors
+    "gitDecoration.conflictingResourceForeground": "#ffdcc2",
+    "gitDecoration.deletedResourceForeground": "#fcb2b0",
+    "gitDecoration.ignoredResourceForeground": "#91e9fd",
+    "gitDecoration.modifiedResourceForeground": "#ffedb8",
+    "gitDecoration.untrackedResourceForeground": "#e3ffc4",
+    "gitDecoration.submoduleResourceForeground": "#8db9e2",     // Submodules
+    
+    // Staged changes
+    "gitDecoration.addedResourceForeground": "#c2ffcd",         // Added/Staged (A)
+    "gitDecoration.stageModifiedResourceForeground": "#ffe7c4", // Staged modifications
+    "gitDecoration.stageDeletedResourceForeground": "#ffcbc2",  // Staged deletions
+    
+    // Renamed files
+    "gitDecoration.renamedResourceForeground": "#b5ffcf"
+
+
     "input.background": "#20292e",
     "input.foreground": "#ffffff", 
     "input.placeholderForeground": "#717e82",
-    "list.activeSelectionBackground": "#717e8222",
-    "list.activeSelectionForeground": "#00ffd8",
+    "list.activeSelectionBackground": "#717e8211",
+    "list.activeSelectionForeground": "#FFFFFF",
     "list.dropBackground": "#2d4048",
     "list.focusBackground": "#076b61", 
     "list.highlightForeground": "#eeffff",
     "list.hoverBackground": "#2c383d00",
     "list.hoverForeground": "#FFFFFF",
     "list.inactiveFocusBackground": "#009688",
-    "list.inactiveSelectionBackground": "#2c383d",
-    "list.inactiveSelectionForeground": "#00ffd8",
+    "list.inactiveSelectionBackground": "#717e8211",
+    "list.inactiveSelectionForeground": "#FFFFFFCC",
     "panel.border": "#1b282e",
     "panel.background": "#273237",
     "panelTitle.activeBorder": "#009688",

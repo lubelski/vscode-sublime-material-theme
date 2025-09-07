@@ -1,5 +1,7 @@
 # Atom Material Theme for Visual Studio Code
 
+this theme is primarily tuned for typecsript and react
+
 ## Recommended Settings
 
 ```
@@ -11,9 +13,6 @@
 ```
 
 > This Theme based on [tobiasalthoff/vscode-atom-material-theme](https://github.com/lubelski/vscode-sublime-material-theme), [atom-material-ui](https://github.com/atom-material/atom-material-ui) and [atom-material-syntax](https://github.com/atom-material/atom-material-syntax)
-
-## Credits
-
 
 ## Publish
 
