@@ -378,8 +378,12 @@
         "variable.language.builtin",
         "variable.other.constant.builtin",
         "new.expr meta.function-call entity.name.function",
-        "variable.readonly.defaultLibrary"
-        // "meta.function-call variable.other.object"
+        "variable.readonly.defaultLibrary",
+        // "meta.function-call variable.other.object",
+        // type paramters
+        "meta.type.annotation meta.type.parameters variable.other.readwrite",
+        "meta.object.member.tsx variable.other.readwrite.tsx"
+
       ],
       "settings": {
         "foreground": "#FFCB6B"

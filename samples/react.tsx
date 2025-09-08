@@ -106,4 +106,22 @@ const UserDashboard: React.FC = () => {
   );
 };
 
+const meta: Meta<typeof MyComponent> = {
+  title: 'MyComponent',
+  component: MyComponent,
+  decorators: [
+    (Story, args) => (
+      /** We need to wrap the Combobox in a `ProvideForm` to make our Story interactable. */
+      <div className={storyStyles.storyWrapper}>
+        <MyComponent<MyType>
+          render={(...renderArgs) => (
+            <Story prop={getProp('myKey')} {...renderArgs} {...args} />
+          )}
+        />
+      </div>
+    ),
+  ],
+}
+export { meta }
+
 export default UserDashboard;
