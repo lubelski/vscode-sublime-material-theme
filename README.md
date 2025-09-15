@@ -16,8 +16,8 @@ this theme is primarily tuned for typecsript and react
 
 ## Publish
 
-- commit code
 - bump version number 
+- commit code
 - `vsce publish`
 
 - UI: [atom-material-ui](https://github.com/atom-material/atom-material-ui)
