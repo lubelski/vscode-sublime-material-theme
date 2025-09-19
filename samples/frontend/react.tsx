@@ -1,34 +1,41 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 
-interface User {
+type User = {
   id: number;
   name: string;
   email: string;
 }
 
-interface TodoItemProps {
+interface TodoItemProps extends User {
   text: string;
   completed: boolean;
   onToggle: () => void;
   children: React.ReactNode
 }
 
-const TodoItem: React.FC<TodoItemProps> = ({ text, completed, onToggle }) => (
-  <li className={`todo-item ${completed ? 'completed' : ''}`} onClick={onToggle}>
-    {completed ? '✅' : '⭕'} {text}
-  </li>
-);
+type Children = TodoItemProps['children']
 
-const onSubmit = async (val: string) => {
+const TodoItem: React.FC<TodoItemProps> = ({ text, completed, onToggle, ...restProps }) => {
+
+  const { id, name, email } = restProps;
+  
+  return (
+    <li className={`todo-item ${completed ? 'completed' : ''}`} onClick={onToggle}>
+      {completed ? '✅' : '⭕'} {text}
+    </li>
+  )
+};
+
+const onSubmit = async (val: number) => {
   return new Promise((res) => {
     setTimeout(() => {
-      console.log(val);
-      res(undefined)
+      console.log(val + 12000.01);
+      res(NaN)
     }, 100)
   })
 }
 
-const UserDashboard: React.FC = () => {
+const MyComponent: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);
   const [todos, setTodos] = useState<string[]>(['Learn React', 'Build an app']);
   const [completedTodos, setCompletedTodos] = useState<Set<number>>(new Set());
@@ -38,9 +45,12 @@ const UserDashboard: React.FC = () => {
   useEffect(() => {
     // Simulate API call
     void onSubmit('hello')
+    
     setIsLoading(true);
+    
     setTimeout(() => {
       setUser({ id: 1, name: 'John Doe', email: 'john@example.com' });
+    
       setIsLoading(false);
     }, 1000);
   }, []);
@@ -93,7 +103,7 @@ const UserDashboard: React.FC = () => {
           <input
             type="text"
             value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
+            onChange={(event) => setInputValue(event.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && addTodo()}
             placeholder="Add a new todo..."
           />
@@ -121,7 +131,7 @@ const meta: Meta<typeof MyComponent> = {
   component: MyComponent,
   decorators: [
     (Story, args) => (
-      /** We need to wrap the Combobox in a `ProvideForm` to make our Story interactable. */
+      /** We need to wrap the component */
       <div className={storyStyles.storyWrapper}>
         <MyComponent<MyType>
           render={(...renderArgs) => (

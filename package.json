@@ -2,7 +2,7 @@
   "name": "interstellar-cafe-theme",
   "displayName": "Interstellar Cafe Theme",
   "description": "Dark theme based on Sublime Material Themes, Atom Material Theme, Atom-Material-Ui and Atom-Material-Syntax",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "publisher": "interstellar",
   "author": {
     "name": "lubelski"
@@ -32,7 +32,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "Sublime Material Theme",
+        "label": "Interstellar Cafe Dark Theme",
         "uiTheme": "vs-dark",
         "path": "./themes/Interstellar Cafe Theme-color-theme.json"
       }

@@ -153,11 +153,7 @@
         "constant.language.import-export-all.tsx",
         "meta.parameters.js",
         "punctuation.separator.comma.js",
-        "meta.function-call variable.other.object.property",
-        "meta.definition.property entity.name.function",
-        "meta.definition.variable variable.other.constant entity.name.function"
-        
-
+        "meta.definition.variable variable.other.constant entity.name.function",
       ],
       "settings": {
         "foreground": "#EEFFFF" // prev: "#EEFFFF"
@@ -166,14 +162,32 @@
     {
       "scope": [
         "punctuation",
-        // "keyword.operator",
+        "keyword.operator.assignment",
+        "keyword.operator.type.annotation",
+        "punctuation.definition.parameters",
         "meta.brace",
+        "meta.object.type punctuation.definition.block",
+        "meta.interface punctuation.definition.block",
+        "keyword.control.as.ts",
+      ],
+      "settings": {
+        "foreground": "#528290db" // prev: "#89DDF3"
+      }
+    },
+    {
+      "scope": [
+        // "punctuation.definition.block",
+        // "punctuation.definition.template-expression",
+        // "punctuation.section.embedded",
+        // "punctuation.definition.binding-pattern.object",
+        // "punctuation.definition.parameters",
+        // "meta.brace",
         "support.constant",
         "support.type.object.module.js",
         "meta.group.regexp",
         "string.regexp.js",
         "source.js-ignored-vscode",
-        "punctuation.definition.string",
+        // "punctuation.definition.string",
       ],
       "settings": {
         "foreground": "#6cadbdDD" // prev: "#89DDF3"
@@ -185,18 +199,22 @@
         // "punctuation.definition.string",
         // "meta.field.declaration keyword.operator.optional"
         // "meta.type.tuple meta.brace.square"
-        "storage.modifier.async"
+        "storage.modifier.async",
+        // "storage.type.function.arrow"
+        // "meta.namespace.declaration.ts storage.modifier.ts"
+        
       ],
       "settings": {
-        "foreground": "#89DDF3" // prev: "#89DDF3"
+        "foreground": "#6bd2ec" // prev: "#89DDF3"
       }
     },
-    // very unique JS keywords
+    // unique module related JS keywords
     {
       "scope": [
         "keyword.control.import",
         "keyword.control.from",
         "keyword.control.export",
+        "meta.namespace.declaration.ts storage.modifier.ts"
         // "storage.modifier.async"
       ],
       "settings": {
@@ -208,7 +226,6 @@
       "scope": [
         "support.type.property-name",
         "string.quoted",
-        // "meta.object-literal.key",
         "source.coffee.embedded.source",
         "entity.name.section.markdown",
         "punctuation.definition.heading.markdown",
@@ -217,7 +234,8 @@
         "string.template.ts",
         "string.template.tsx",
         "string.interpolated.jade",
-        "support.type.builtin.graphql"
+        "support.type.builtin.graphql",
+        "meta.jsx.children"
       ],
       "settings": {
         "foreground": "#e8f3c9",// "#b9e981" // b9e981 prev: #C3E88D
@@ -336,14 +354,14 @@
         "meta.function-call.generic.python",
         "keyword.other.special-method.ruby",
         "entity.name.type.js",
-        "variable.other.object.property.js",
+        "variable.other.object.property",
         "entity.name.section.group-title.ini",
         "support.variable.property.dom.js",
         "support.variable.property.dom.ts",
         "entity.name.type.ts",
         "entity.name.type.tsx",
         "variable.graphql",
-        "meta.method.declaration storage.type.ts" // constructor
+        "support.variable.property"
       ],
       "settings": {
         "foreground": "#82AAFF"
@@ -390,8 +408,8 @@
         "variable.readonly.defaultLibrary",
         // "meta.function-call variable.other.object",
         // type paramters
-        "meta.type.annotation meta.type.parameters variable.other.readwrite",
-        "meta.object.member.tsx variable.other.readwrite.tsx"
+        "entity.name.type.interface",
+        "entity.name.type.alias"
 
       ],
       "settings": {
@@ -463,14 +481,20 @@
         "support.type.property-name.media.css",
         "support.constant.parity.css",
         "meta.object-literal.key",       
-        "meta.object.member variable.other.readwrite",
+        // "meta.object.member variable.other.readwrite",
         "variable.object.property",
         "meta.definition.property entity.name.function",
+        "meta.object-literal.key entity.name.function",
+        "meta.function-call variable.other.object.property",
+        "meta.method.declaration",
+        "meta.method.declaration storage.type", // constructor
+        "meta.definition.method entity.name.function"
       ],
       "settings": {
         "foreground": "#abcdd7" // prev: "#73d1c8"
       }
     },
+    // jsx properties 
     {
       "scope": [
         "entity.other.attribute-name.tsx",
