@@ -1,8 +1,8 @@
 
 type GenericArgs<
- AStrigType extends string, 
- ANumberType extends number, 
- ABooleanType extends boolean> = {
+  AStrigType extends string, 
+  ANumberType extends number, 
+  ABooleanType extends boolean> = {
     aStringType: AStrigType, 
     aNumberType: ANumberType
     aBooleanType: ABooleanType

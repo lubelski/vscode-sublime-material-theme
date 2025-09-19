@@ -6,7 +6,7 @@ public class ReverseNumber {
   public static void main(String[] args) {
 
     //original number
-    int number = 1234;
+    int number = 1235;
     int reversedNumber = 0;
     int temp = 0;
 

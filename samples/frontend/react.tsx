@@ -19,6 +19,15 @@ const TodoItem: React.FC<TodoItemProps> = ({ text, completed, onToggle }) => (
   </li>
 );
 
+const onSubmit = async (val: string) => {
+  return new Promise((res) => {
+    setTimeout(() => {
+      console.log(val);
+      res(undefined)
+    }, 100)
+  })
+}
+
 const UserDashboard: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);
   const [todos, setTodos] = useState<string[]>(['Learn React', 'Build an app']);
@@ -28,6 +37,7 @@ const UserDashboard: React.FC = () => {
 
   useEffect(() => {
     // Simulate API call
+    void onSubmit('hello')
     setIsLoading(true);
     setTimeout(() => {
       setUser({ id: 1, name: 'John Doe', email: 'john@example.com' });
