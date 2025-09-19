@@ -54,6 +54,7 @@
 
     "input.background": "#20292e",
     "input.foreground": "#ffffff", 
+    "input.border": "#2d4048",
     "input.placeholderForeground": "#717e82",
     "list.activeSelectionBackground": "#2d404844",
     "list.activeSelectionForeground": "#FFFFFF",
@@ -112,7 +113,7 @@
     "titleBar.inactiveBackground": "#233239",
     "debugToolBar.background": "#232e33",
     "tree.indentGuidesStroke": "#233239",
-    "widget.border": "#587e8d",
+    "widget.border": "#2d4048",
     "editorIndentGuide.background1": "#3d586222",     
   },
   "tokenColors": [
@@ -156,9 +157,7 @@
         "meta.definition.variable variable.other.constant entity.name.function",
         "meta.function meta.definition.function entity.name.function",
         "meta.block meta.object.member variable.other.readwrite"
-
-
-      ],
+    ],
       "settings": {
         "foreground": "#EEFFFF" // prev: "#EEFFFF"
       }
