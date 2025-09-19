@@ -154,6 +154,10 @@
         "meta.parameters.js",
         "punctuation.separator.comma.js",
         "meta.definition.variable variable.other.constant entity.name.function",
+        "meta.function meta.definition.function entity.name.function",
+        "meta.block meta.object.member variable.other.readwrite"
+
+
       ],
       "settings": {
         "foreground": "#EEFFFF" // prev: "#EEFFFF"
@@ -312,7 +316,7 @@
         "keyword.const.go",
         "meta.tag.sgml.doctype.html",
         "storage.modifier.java",
-        "punctuation.definition.storage.type.objc",
+        "punctuation.definition.storage.type.objct",
         "storage.modifier.perl",
         "keyword.other.DML.sql",
         "keyword.other.alias.sql",
@@ -326,6 +330,11 @@
         "keyword.other.default",
         // "meta.field.declaration keyword.operator.optional"
         // "meta.type.tuple meta.brace.square"
+
+        	
+        "meta.method.declaration.ts meta.block.ts meta.var.expr.ts storage.type.ts"
+
+
 
       ],
       "settings": {
@@ -361,7 +370,10 @@
         "entity.name.type.ts",
         "entity.name.type.tsx",
         "variable.graphql",
-        "support.variable.property"
+        "support.variable.property",
+        
+        "meta.block meta.function-call entity.name.function" // override the class yellow
+
       ],
       "settings": {
         "foreground": "#82AAFF"
@@ -409,7 +421,11 @@
         // "meta.function-call variable.other.object",
         // type paramters
         "entity.name.type.interface",
-        "entity.name.type.alias"
+        "entity.name.type.alias",
+
+        
+        "new.expr meta.function-call entity.name.function"
+
 
       ],
       "settings": {
@@ -481,14 +497,16 @@
         "support.type.property-name.media.css",
         "support.constant.parity.css",
         "meta.object-literal.key",       
-        // "meta.object.member variable.other.readwrite",
+        "meta.object.member variable.other.readwrite",
         "variable.object.property",
         "meta.definition.property entity.name.function",
         "meta.object-literal.key entity.name.function",
-        "meta.function-call variable.other.object.property",
+        // "meta.function-call variable.other.object.property",
         "meta.method.declaration",
+        
+        "meta.definition.method entity.name.function",
+
         "meta.method.declaration storage.type", // constructor
-        "meta.definition.method entity.name.function"
       ],
       "settings": {
         "foreground": "#abcdd7" // prev: "#73d1c8"

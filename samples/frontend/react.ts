@@ -1,5 +1,10 @@
 import { useState, useEffect, useCallback } from 'react';
 
+function beepBoop (str: string) {
+  console.log("beep " + str)
+  return 'boop'
+}
+
 // Class definition for data management
 export class TaskManager {
   private tasks: Map<string, Task> = new Map();
@@ -86,6 +91,7 @@ export interface TaskStats {
   completed: number;
   pending: number;
   highPriority: number;
+  count: 1 | 2 | 3;
 }
 
 // Custom React hook
@@ -99,6 +105,7 @@ export function useTaskManager(initialTasks: Omit<Task, 'id' | 'createdAt'>[] = 
   clearCompleted: () => void;
 } {
   const [taskManager] = useState(() => new TaskManager());
+  
   const [tasks, setTasks] = useState<Task[]>([]);
 
   // Initialize with provided tasks
