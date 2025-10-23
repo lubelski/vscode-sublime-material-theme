@@ -16,9 +16,18 @@
     "editorGroupHeader.border": "#3d586244",
     // editor
     "editor.background": "#233239FF",
-    "editor.findMatchBackground": "#0096887a",
-    "editor.foreground": "#d4d4d4", 
-    "editor.lineHighlightBackground": "#212b30",
+    
+    "editor.findMatchBackground": "#3d5862CC",
+    // "editor.findMatchForeground": "#FFFFFF88",
+    // "editor.findMatchBorder" : "#3d5862ff",
+
+    "editor.findMatchHighlightBackground": "#3d586266",
+    // "editor.findMatchHighlightForeground": "#FFFFFF88",
+    // "editor.findMatchHighlightBorder" : "#FFFFFF11",
+    
+    "editor.lineHighlightBackground": "#212b3088",
+    
+    "editor.foreground": "#d4d4d4",     
     "editor.selectionBackground": "#3d586266",
     "editorBracketMatch.background": "#354044",
     "editorBracketMatch.border": "#FF000000",
@@ -26,7 +35,7 @@
     "editorGroup.dropBackground": "#3d586244",
     "editorGroupHeader.tabsBackground": "#2d4048",
     "editorLineNumber.foreground": "#3e4b50",
-    "editorOverviewRuler.findMatchForeground": "#0000ffcc",
+    "editorOverviewRuler.findMatchForeground": "#0096882d",
     "editorWidget.background": "#232e33",
     "editorWidget.border": "#29363d",
     "editorSuggestWidget.background": "#29363d",
@@ -448,8 +457,7 @@
         "variable.language.special.self.python",
         "punctuation.definition.interpolation.begin.bracket.curly.scss",
         "punctuation.definition.interpolation.end.bracket.curly.scss",
-        "variable.language.this.js",
-        "variable.language.this.ts"
+        "variable.language.this",
       ],
       "settings": {
         "foreground": "#FF5370"

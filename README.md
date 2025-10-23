@@ -1,6 +1,10 @@
-# Atom Material Theme for Visual Studio Code
+# Interstellar Cafe Theme
 
-this theme is primarily tuned for typecsript and react
+- this theme is primarily tuned for typecsript and react
+
+# Dev Notes 
+
+- "insepct Editor Tokens and Scopes"
 
 ## Recommended Settings
 
